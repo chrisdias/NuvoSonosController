@@ -3,6 +3,7 @@ var SonosDiscovery = require('sonos-discovery');
 var SonosHttpAPI = require('./lib/sonos-http-api.js');
 var fs = require('fs');
 var path = require('path');
+var Nuvo = require('./nuvo.js');
 
 var settings = {
   port: 5005,
@@ -33,5 +34,6 @@ fs.exists('./presets.json', function (exists) {
 		console.log('no preset file, ignoring...');
 	}
 	new SonosHttpAPI(discovery, settings, presets);
+	var nuvo = new Nuvo(discovery);
 });
 

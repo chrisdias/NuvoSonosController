@@ -6,14 +6,14 @@ var players = [];
 function Nuvo(discovery) {
   var _this = this;
 
-  var sp = new SerialPort("COM3", {
-    parser: serialport.parsers.readline("\n"),
-    baudrate: 57600,
-    databits: 8,
-    stopbits: 1,
-    buffersize: 1024,
-    parity: 'none'
-  });
+    var sp = new SerialPort("COM3", {
+      parser: serialport.parsers.readline("\n"),
+      baudrate: 57600,
+      databits: 8,
+      stopbits: 1,
+      buffersize: 1024,
+      parity: 'none'
+    });
 
   sp.on("open", function() {
     console.log('serial port opened');

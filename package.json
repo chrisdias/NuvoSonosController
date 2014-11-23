@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "sonos-discovery": "git+https://github.com/jishi/node-sonos-discovery.git#master",
-    "paperboy": "*"
+    "paperboy": "*",
+    "express": "~4.10.2",
+    "serialport": "~1.4.6"
   },
   "engine": "node 0.8.x",
   "main": "lib/sonos-http-api.js"

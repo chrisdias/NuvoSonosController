@@ -1,9 +1,10 @@
+
 var http = require('http');
 var SonosDiscovery = require('sonos-discovery');
 var SonosHttpAPI = require('./lib/sonos-http-api.js');
 var fs = require('fs');
 var path = require('path');
-var Nuvo = require('./nuvo.js');
+var Nuvo = require('./lib/nuvo.js');
 var nuvo;
 
 var settings = {

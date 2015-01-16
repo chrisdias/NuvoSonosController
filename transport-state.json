@@ -1,44 +1,95 @@
-{
-  "uuid": "RINCON_000E58A0707001400",
-  "state": {
-    "currentTrack": {
-      "artist": "Birdy",
-      "title": "Skinny Love",
-      "album": "Birdy",
-      "albumArtURI": "/getaa?s=1&u=x-sonos-spotify%3aspotify%253atrack%253a4RL77hMWUq35NYnPLXBpih%3fsid%3d12%26flags%3d32",
-      "duration": 203,
-      "uri": "x-sonos-spotify:spotify%3atrack%3a4RL77hMWUq35NYnPLXBpih?sid=12&flags=32"
-    },
-    "nextTrack": {
-      "artist": "Jeff Buckley",
-      "title": "Hallelujah",
-      "album": "So Real: Songs From Jeff Buckley",
-      "albumArtURI": "/getaa?s=1&u=x-sonos-spotify%3aspotify%253atrack%253a74X1epeRufHckhuX1KFD04%3fsid%3d12%26flags%3d32",
-      "duration": 415,
-      "uri": "x-sonos-spotify:spotify%3atrack%3a74X1epeRufHckhuX1KFD04?sid=12&flags=32"
-    },
-    "volume": 60,
-    "mute": false,
-    "trackNo": 1,
-    "elapsedTime": 66,
-    "elapsedTimeFormatted": "01:06",
-    "zoneState": "PLAYING",
-    "playerState": "PLAYING",
-    "zonePlayMode": {
-      "shuffle": false,
-      "repeat": true,
-      "crossfade": true
-    }
-  },
-  "playMode": {
-    "shuffle": false,
-    "repeat": true,
-    "crossfade": true
-  },
-  "roomName": "Dias House",
-  "coordinator": "RINCON_000E58A0707001400",
-  "groupState": {
-    "volume": 60,
-    "mute": false
-  }
-}
+[
+	{
+		"uuid": "RINCON_000E58A0707001400",
+		"coordinator": {
+			"uuid": "RINCON_000E58A0707001400",
+			"state": {
+				"currentTrack": {
+					"artist": "Oasis",
+					"title": "Supersonic",
+					"album": "Definitely Maybe",
+					"albumArtURI": "http://cont-sjl-2.pandora.com/images/public/amz/9/2/1/3/074646643129_500W_500H.jpg",
+					"duration": 283,
+					"uri": "pndrradio-http://audio-dc6-t2-2.pandora.com/access/?version=4&lid=185459891&token=EjdoechEBPcO4Up5c5sayfnF1H%2Bh7%2FcjPrNOh0OfolHMWl1msPqm5jYhkzE7ChfluKFid1xXeFggGVJtUuma%2FTMQhdpQlCpDjMdQdeRt1dx7hICJ91G3Ak1yZt85BlTMkjKTxCrkPDO9DaYwwNEQGL%2B2zx5uZN3DsUL74p3reBPPKRuIH5qvx%2Btb1tAvgCHgTBiOJBoIXvpVCfA0ISZCB0xmF4BQIx81jtWlHAhxiIXy7DnWMSiFRjXJM9BFX%2BCcJVaJuLozJPoksbOs%2FwqeBzuJScKBD4%2BGxWoH1RG3IE0t3In5WJZQ8JCMMZtUs7qrwXVUuJaIRrXkaCA0f5YHRw4rEF88Dpmmzo%2FJF17nHFJXcYUBVa%2BnhQ%3D%3D&a=http%3a%2f%2fcont-sjl-2.pandora.com%2fimages%2fpublic%2famz%2f9%2f2%2f1%2f3%2f074646643129_500W_500H.jpg&m=c1350167eb79ee20e0cad7a4ea7a75864319d0929e962ab75070ee3c878f8a83b7f82817e5a7035c5e894977e9dfc5d1&f=1&r=1&g=-5.28&x=00010475"
+				},
+				"nextTrack": {
+					"artist": "Eddie Vedder",
+					"title": "Hard Sun",
+					"album": "Into The Wild (Soundtrack)",
+					"albumArtURI": "http://cont-sv5-2.pandora.com/images/public/amz/3/2/4/4/886971594423_500W_433H.jpg",
+					"duration": 0,
+					"uri": "pndrradio-http://audio-ch1-t1-2.pandora.com/access/2818841314960756054?version=4&lid=185459891&token=EjdoechEBPcO4Up5c5sayfnF1H%2Bh7%2FcjPrNOh0OfolHMWl1msPqm5jYhkzE7ChfluKFid1xXeFggGVJtUuma%2FVhOW7uy3gMQesgwRDJmHgsywqcpB%2Fo5xF%2BCqWPrueUn0lj69sEntiU25JvjQBMHOCf7zVUjOFdcEz4K861jxj1xyVHlESOoZx%2BPawhKIIKK3H5niQvnAgKek3szqbNFQbFUXZQCHhIN8DCP%2Bbc2tPA%2BTB4tVVNcyqSdqdcQVGSobf1UAbVTtUHr2ZGUZkDVeFVqUmqf1wv4h%2BOHtUOt%2B%2BWk82TLaw%2BqNuwtI%2F7MTKadhv05lIeghd2Lwh0Hy1Ah2kntpmm9eeXexgDDc2iJ%2FophMMSGy8R9ZQ%3D%3D&a=http%3a%2f%2fcont-sv5-2.pandora.com%2fimages%2fpublic%2famz%2f3%2f2%2f4%2f4%2f886971594423_500W_433H.jpg&m=74bb4c2bf7a3f0bee0cad7a4ea7a75864319d0929e962ab76730ca186f564255da6d1ff696e8aa3192b4118d2ef7658d9481bd070155bbaf45a6574b3c80ea59&f=1&r=1&g=-5.23&x=00010475"
+				},
+				"volume": 63,
+				"mute": false,
+				"trackNo": 3,
+				"elapsedTime": 119,
+				"elapsedTimeFormatted": "01:59",
+				"zoneState": "PLAYING",
+				"playerState": "PLAYING",
+				"zonePlayMode": {
+					"shuffle": false,
+					"repeat": false,
+					"crossfade": false
+				}
+			},
+			"playMode": {
+				"shuffle": false,
+				"repeat": false,
+				"crossfade": false
+			},
+			"roomName": "Dias House",
+			"coordinator": "RINCON_000E58A0707001400",
+			"groupState": {
+				"volume": 63,
+				"mute": false
+			}
+		},
+		"members": [
+			{
+				"uuid": "RINCON_000E58A0707001400",
+				"state": {
+					"currentTrack": {
+						"artist": "Oasis",
+						"title": "Supersonic",
+						"album": "Definitely Maybe",
+						"albumArtURI": "http://cont-sjl-2.pandora.com/images/public/amz/9/2/1/3/074646643129_500W_500H.jpg",
+						"duration": 283,
+						"uri": "pndrradio-http://audio-dc6-t2-2.pandora.com/access/?version=4&lid=185459891&token=EjdoechEBPcO4Up5c5sayfnF1H%2Bh7%2FcjPrNOh0OfolHMWl1msPqm5jYhkzE7ChfluKFid1xXeFggGVJtUuma%2FTMQhdpQlCpDjMdQdeRt1dx7hICJ91G3Ak1yZt85BlTMkjKTxCrkPDO9DaYwwNEQGL%2B2zx5uZN3DsUL74p3reBPPKRuIH5qvx%2Btb1tAvgCHgTBiOJBoIXvpVCfA0ISZCB0xmF4BQIx81jtWlHAhxiIXy7DnWMSiFRjXJM9BFX%2BCcJVaJuLozJPoksbOs%2FwqeBzuJScKBD4%2BGxWoH1RG3IE0t3In5WJZQ8JCMMZtUs7qrwXVUuJaIRrXkaCA0f5YHRw4rEF88Dpmmzo%2FJF17nHFJXcYUBVa%2BnhQ%3D%3D&a=http%3a%2f%2fcont-sjl-2.pandora.com%2fimages%2fpublic%2famz%2f9%2f2%2f1%2f3%2f074646643129_500W_500H.jpg&m=c1350167eb79ee20e0cad7a4ea7a75864319d0929e962ab75070ee3c878f8a83b7f82817e5a7035c5e894977e9dfc5d1&f=1&r=1&g=-5.28&x=00010475"
+					},
+					"nextTrack": {
+						"artist": "Eddie Vedder",
+						"title": "Hard Sun",
+						"album": "Into The Wild (Soundtrack)",
+						"albumArtURI": "http://cont-sv5-2.pandora.com/images/public/amz/3/2/4/4/886971594423_500W_433H.jpg",
+						"duration": 0,
+						"uri": "pndrradio-http://audio-ch1-t1-2.pandora.com/access/2818841314960756054?version=4&lid=185459891&token=EjdoechEBPcO4Up5c5sayfnF1H%2Bh7%2FcjPrNOh0OfolHMWl1msPqm5jYhkzE7ChfluKFid1xXeFggGVJtUuma%2FVhOW7uy3gMQesgwRDJmHgsywqcpB%2Fo5xF%2BCqWPrueUn0lj69sEntiU25JvjQBMHOCf7zVUjOFdcEz4K861jxj1xyVHlESOoZx%2BPawhKIIKK3H5niQvnAgKek3szqbNFQbFUXZQCHhIN8DCP%2Bbc2tPA%2BTB4tVVNcyqSdqdcQVGSobf1UAbVTtUHr2ZGUZkDVeFVqUmqf1wv4h%2BOHtUOt%2B%2BWk82TLaw%2BqNuwtI%2F7MTKadhv05lIeghd2Lwh0Hy1Ah2kntpmm9eeXexgDDc2iJ%2FophMMSGy8R9ZQ%3D%3D&a=http%3a%2f%2fcont-sv5-2.pandora.com%2fimages%2fpublic%2famz%2f3%2f2%2f4%2f4%2f886971594423_500W_433H.jpg&m=74bb4c2bf7a3f0bee0cad7a4ea7a75864319d0929e962ab76730ca186f564255da6d1ff696e8aa3192b4118d2ef7658d9481bd070155bbaf45a6574b3c80ea59&f=1&r=1&g=-5.23&x=00010475"
+					},
+					"volume": 63,
+					"mute": false,
+					"trackNo": 3,
+					"elapsedTime": 119,
+					"elapsedTimeFormatted": "01:59",
+					"zoneState": "PLAYING",
+					"playerState": "PLAYING",
+					"zonePlayMode": {
+						"shuffle": false,
+						"repeat": false,
+						"crossfade": false
+					}
+				},
+				"playMode": {
+					"shuffle": false,
+					"repeat": false,
+					"crossfade": false
+				},
+				"roomName": "Dias House",
+				"coordinator": "RINCON_000E58A0707001400",
+				"groupState": {
+					"volume": 63,
+					"mute": false
+				}
+			}
+		]
+	}
+]

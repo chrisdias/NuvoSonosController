@@ -1,15 +1,19 @@
-/// <reference path="typings/express/express.d.ts" />
 
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
+var SonosLib = require('./lib/sonoslib.js');
 
-var app = module.exports = express();
+var app = express();
+module.exports = app;
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('port', process.env.PORT || 3000);
 app.set('cache', './cache');
+
+var sonos = new SonosLib();
+module.exports.sonos = sonos;
 
 app.use('/nuvo', require('./routes/nuvo'));
 app.use('/sonos', require('./routes/sonos'));

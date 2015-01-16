@@ -2,8 +2,8 @@
 
 var express = require('express');
 var router = express.Router();
+//var app = require('../app');
 var SonosLib = require('../lib/sonoslib.js');
-var app = require('../app');
 var sonos = new SonosLib();
 
 function handleRoute(req, res, opt) {
@@ -20,14 +20,15 @@ function handleRoute(req, res, opt) {
 
 router.get('/:p0', function(req, res) {
   // tts, zones, lockvolumes, unlockvolumes, reindex, pauseall, resumeall 
-
+  var p0 = req.params.p0.toLowerCase();
+  
   // handle tts file request from Sonos
   if (req.params.action === 'tts') {
     sonos.streamFile(req, res);
     return;
   } else {
     var opt = {
-      action: req.params.p0
+      action: p0
     };
 
     handleRoute(req, res, opt);
@@ -39,30 +40,33 @@ router.get('/:p0/:p1', function(req, res) {
   // pauseall/{timeout in minutes} 
   // resumeall/{timeout in minutes} 
   // preset/{JSON preset} 
-  // preset/{predefined preset name} 
+  // preset/{predefined preset name}
+  // room/state (returns player state) 
   // room/next (will skip to the next track on living room, unless it's not a coordinator)
   // room/pause (will pause the living room)
   // room/playlists (will return all playlists)
   // room/favorites (will return all favorites)
   var opt = {};
-
+  var p0 = req.params.p0.toLowerCase();
+  var p1 = req.params.p1.toLowerCase();
+  
   // http://localhost:1234/tts/??? 
-  if (req.params.p0 === 'tts') {
+  if (p0 === 'tts') {
     sonos.streamFile(req, res);
     return;
   }
 
-  if (req.params.p0 === 'saveall' || req.params.p0 === 'restoreall' ||
-    req.params.p0 === 'preset' || req.params.p0 === 'pauseall' ||
-    req.params.p0 === 'resumeall' || req.params.p0 === 'reindex') {
+  if (p0 === 'saveall' || p0 === 'restoreall' ||
+    p0 === 'preset' || p0 === 'pauseall' ||
+    p0 === 'resumeall' || p0 === 'reindex') {
     opt = {
-      action: req.params.p0,
-      value: req.params.p1
+      action: p0,
+      value: p1
     };
   } else {
     opt = {
-      room: req.params.p0,
-      action: req.params.p1
+      room: p0,
+      action: p1
     };
   }
 
@@ -79,20 +83,24 @@ router.get('/:p0/:p1/:p2', function(req, res) {
   // room/favorite/[favorite name]
   // room/repeat/on
   var opt = {};
-
+  var p0 = req.params.p0.toLowerCase();
+  var p1 = req.params.p1.toLowerCase();
+  var p2 = req.params.p2.toLowerCase();
+  
+  
   // /room/say/phrase
-  if (req.params.p1 === 'say') {
+  if (p1 === 'say') {
     opt = {
-      room: req.params.p0,
-      action: req.params.p1,
-      text: req.params.p2,
+      room: p0,
+      action: p1,
+      text: p2,
       lang: 'en'
     };
   } else {
     opt = {
-      room: req.params.p0,
-      action: req.params.p1,
-      value: req.params.p2
+      room: p0,
+      action: p1,
+      value: p2
     };
   }
 
@@ -102,13 +110,17 @@ router.get('/:p0/:p1/:p2', function(req, res) {
 
 router.get('/:p0/:p1/:p2/:p3', function(req, res) {
   // room/say/phrase/language_code
+  var p0 = req.params.p0.toLowerCase();
+  var p1 = req.params.p1.toLowerCase();
+  var p2 = req.params.p2.toLowerCase();
+  var p3 = req.params.p3.toLowerCase();
 
-  if (req.params.p1 === 'say') {
+  if (p1 === 'say') {
     var opt = {
-      room: req.params.p0,
-      action: req.params.p1,
-      text: req.params.p2,
-      lang: req.params.p3
+      room: p0,
+      action: p1,
+      text: p2,
+      lang: p3
     };
 
     handleRoute(req, res, opt);

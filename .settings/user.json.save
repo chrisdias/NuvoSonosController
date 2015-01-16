@@ -75,43 +75,17 @@
             }
         },
         "vs.languages.json": {
-            "schemas": [
-                {
-                    "fileMatch": [
-                        "/bower.json",
-                        "/.bower.json"
-                    ],
-                    "url": "http://json.schemastore.org/bower"
-                },
-                {
-                    "fileMatch": [
-                        "/package.json"
-                    ],
-                    "url": "http://json.schemastore.org/package"
-                },
-                {
-                    "fileMatch": [
-                        "/project.json"
-                    ],
-                    "url": "http://json.schemastore.org/project"
-                },
-                {
-                    "fileMatch": [
-                        "*.schema.json"
-                    ],
-                    "url": "http://json-schema.org/draft-04/schema#"
-                }
-            ]
+            "schemas": []
         },
         "markdown": {
-            "styles": [],
-            "theme": "dark"
+            "styles": []
         },
         "vs.languages.typescript": {
             "suggestSettings": {
                 "alwaysAllWords": false,
                 "useCodeSnippetsOnMethodSuggest": false
             },
+            "allowMultipleWorkers": false,
             "validationSettings": {
                 "target": "ES5",
                 "baseUrl": "",
@@ -182,12 +156,7 @@
     },
     "search": {
         "excludeFolders": [
-            ".git",
-            "node_modules"
+            ".git"
         ]
-    },
-    "run": {
-        "suffix": ""
-    },
-    "statusBar": true
+    }
 }

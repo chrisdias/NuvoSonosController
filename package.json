@@ -14,6 +14,7 @@
     "serialport": "~1.4.6",
     "serve-favicon": "~2.1.7"
   },
+  "devDependencies": {"gulp": "*"},
   "engine": "node 0.8.x",
   "main": "lib/sonos-http-api.js"
 }

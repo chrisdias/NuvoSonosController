@@ -6,6 +6,7 @@ var fs = require('fs');
 var path = require('path');
 var Nuvo = require('./lib/nuvo.js');
 var nuvo;
+var playerState = 0;
 
 var settings = {
   port: 5005,

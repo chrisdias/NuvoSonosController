@@ -182,8 +182,8 @@
     },
     "search": {
         "excludeFolders": [
-            ".git",
-            "node_modules"
+            ".git"
+            
         ]
     },
     "run": {
